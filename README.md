@@ -42,6 +42,33 @@ You can see the full tree with the following command:
 
 ```
 $ tree -C -v --dirsfirst -P '*.py' -I '*__pycache__|*.pyc' tests
+
+tests
+├── integration
+│   └── __init__.py
+├── modules
+│   ├── general
+│   │   ├── __init__.py
+│   │   ├── g_copy_test.py
+│   │   ├── g_filename_test.py
+│   │   ├── g_list_test.py
+│   │   ├── g_proj_test.py
+│   │   └── g_region_test.py
+│   ├── raster
+│   │   ├── __init__.py
+│   │   ├── r_flow_test.py
+│   │   ├── r_grow_test.py
+│   │   ├── r_his_test.py
+│   │   └── r_info_test.py
+│   ├── vector
+│   │   ├── __init__.py
+│   │   ├── v_build_test.py
+│   │   ├── v_class_test.py
+│   │   └── v_info_test.py
+│   └── __init__.py
+├── pygrass
+│   └── __init__.py
+└── __init__.py
 ```
 
 ### `pytest` integration
@@ -157,7 +184,7 @@ tests/modules/raster/r_info_test.py:6: AssertionError
 ```
 
 As you can see, the testrunner stopped as soon as it encountered the first failing test.
-So no need to wait until the completion of all the tests to see if there are errors.
+So, no need to wait until the completion of all the tests to see if there are errors.
 
 #### Other features
 
