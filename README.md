@@ -116,7 +116,7 @@ following:
 
 - `pytest tests/modules`
 - `pytest tests/modules/vector`
-- `pytest tests/modules/integration`
+- `pytest tests/integration`
 - `pytest tests/modules/vector/v_build_test.py`
 - `pytest tests/modules/vector/v_build_test.py::test_foo`
 
